@@ -27,12 +27,12 @@ tasks.withType<JavaCompile> {
 
 application {
     mainModule.set("com.champlain.soft.game")
-    mainClass.set("com.champlain.soft.game.HelloApplication")
+    mainClass.set("com.champlain.soft.game.GameLauncher")
 }
 
 javafx {
     version = "22.0.1"
-    modules = listOf("javafx.controls", "javafx.fxml")
+    modules = listOf("javafx.controls", "javafx.fxml", "javafx.media")
 }
 
 dependencies {
